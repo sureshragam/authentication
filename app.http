@@ -1,0 +1,38 @@
+post http://localhost:3000/register
+Content-Type: application/json
+
+{
+    "username":"suresh08",
+    "name":"suresh",
+    "password":"suresh08",
+    "gender":"male",
+    "location":"hyderabad"
+}
+
+###
+
+delete http://localhost:3000/users/suresh08 
+
+
+###
+get http://localhost:3000/users/
+
+###
+
+post http://localhost:3000/login
+Content-Type: application/json
+
+{
+    "username":"suresh07",
+    "password":"suresh08"
+}
+
+###
+put http://localhost:3000/change-password
+Content-Type: application/json
+
+{
+    "username":"suresh08",
+    "oldPassword":"suresh08",
+    "newPassword":"suresh008"
+}
